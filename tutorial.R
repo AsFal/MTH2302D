@@ -2,12 +2,18 @@ require(xlsx)
 data = read.xlsx("1896985_1899696_1903555.xlsx", sheetName = "Sheet1")
 data
 
-cmc <- data$ConvertedManaCost
-cmc
-
 midPrice = data$ResaleMid
-midPrice
 
+### Obtention des diagrammes de statistiques descriptives
+jpeg("bad-price-box.jpeg",width = 350, height = 350)
+boxplot(midPrice)
+dev.off()
+
+jpeg("bad-price-hist.jpeg",width = 350, height = 350)
+hist(midPrice, breaks=30, xlab="Prix moyen", ylab="Fréquence")
+dev.off()
+
+### Effacement des données abhérentes du vecteur de prix moyen
 quart = quantile(midPrice)
 quart
 IQR = quart[[4]] - quart[[2]]
@@ -21,99 +27,91 @@ lowerBoundPrice
 
 dataFilteredByPrice = subset(data, midPrice < upperBoundPrice & midPrice > lowerBoundPrice )
 
-hist(dataFilteredByPrice$ResaleMid, breaks=50)
 
+### Nouveaux diagrammes pour la statistiques descrives
+
+jpeg("good-price-box.jpeg",width = 350, height = 350)
+boxplot(dataFilteredByPrice$ResaleMid)
+dev.off()
+
+jpeg("good-price-hist.jpeg",width = 350, height = 350)
+hist(dataFilteredByPrice$ResaleMid, breaks=30, xlab="Prix moyen filtré", ylab="Fréquence")
+dev.off()
+
+
+### Estimateur pour l'effectif de la population 
 averagePrice = mean(dataFilteredByPrice$ResaleMid)
-averagePrice
+
+### Intervalle de conficance pour l'effectif de la population
 n = length(dataFilteredByPrice$ResaleMid)
 s = var(dataFilteredByPrice$ResaleMid)
 error = qnorm(0.975)*s/sqrt(n)
-error
 
+### Estimateur pour lambda (loi exponentielle)
 lambdaEstimator = 1/averagePrice
 lambdaEstimator
 
-
+### Intervalle de confiance pour lambda
 lambdaErrorDown = abs(lambdaEstimator - 1/(averagePrice+error))
 lambdaErrorDown
-lamdaErrorUp = abs(lambdaEstimator - 1/(averagePrice-error))
-lamdaErrorUp
+lambdaErrorUp = abs(lambdaEstimator - 1/(averagePrice-error))
+lambdaErrorUp
 
-k = 15
-observedEffectives = vector()
 
-maxPrice = 0
-for(price in dataFilteredByPrice$ResaleMid) {
-  if(price > maxPrice) {
-    maxPrice = price
-  }
-}
-minPrice = Inf
-for(price in dataFilteredByPrice$ResaleMid) {
-  if(price < minPrice) {
-    minPrice = price
-  }
-}
-minPrice
-priceInterval = maxPrice-minPrice
-priceInterval
-VInterval = priceInterval/k
-VInterval
-
-priceVector <- dataFilteredByPrice$ResaleMid
-priceVector
-
-observedEffective = vector()
-for(i in 1:k) {
-  observedEffective = 0
-  for(price in priceVector) {
-    if (price>(i-1)*VInterval+minPrice && price < i*VInterval+minPrice) {
-      observedEffective = 1 + observedEffective 
+### Test khi deux pour une loi exponentielle
+exponentialKhiDeux = function(k, lambdaEstimator) {
+  ### khi-deux effectifs observées
+  observedEffectives = vector()
+  maxPrice = 0
+  for(price in dataFilteredByPrice$ResaleMid) {
+    if(price > maxPrice) {
+      maxPrice = price
     }
   }
-  observedEffectives[i] = observedEffective
-}
-observedEffectives
-
-
-
-#On commence a calculer les effectif a partir du prix minimum
-lambdaEstimator
-lambdaEstimator = 8
-pexp(1, rate=lambdaEstimator)
-theoreticalEffectives = vector()
-for(i in 1:(k-1)) {
-  print(i)
-  print(pexp(minPrice+VInterval*(i-1),rate = lambdaEstimator))  
-  print(pexp(minPrice+VInterval*(i),rate = lambdaEstimator))
+  minPrice = Inf
+  for(price in dataFilteredByPrice$ResaleMid) {
+    if(price < minPrice) {
+      minPrice = price
+    }
+  }
+  minPrice
+  priceInterval = maxPrice-minPrice
+  VInterval = priceInterval/k
   
-  theoreticalEffectives[i] = (pexp(VInterval*(i),rate = lambdaEstimator) - pexp(VInterval*(i-1),rate = lambdaEstimator))
-  print(theoreticalEffectives[i])
-}
-theoreticalEffectives[k] = 1 - pexp(VInterval*(k-1), rate=lambdaEstimator)
-theoreticalEffectives
-print(theoreticalEffectives[1])
-
-sum(theoreticalEffectives)
-
-chisq.test(observedEffectives, p=theoreticalEffectives)
-
-
-
-khi_deux = 0.
-for(i in 1:k) {
-  print("====================================")
-  print(i)
-  print(khi_deux)
-  print(theoreticalEffectives[i])
-  print((observedEffectives[i]-theoreticalEffectives[i])**2/theoreticalEffectives[i])
-  print("====================================")
+  priceVector <- dataFilteredByPrice$ResaleMid
   
-
-  khi_deux = khi_deux + (observedEffectives[i]-theoreticalEffectives[i])**2/theoreticalEffectives[i]
+  
+  observedEffective = vector()
+  for(i in 1:k) {
+    observedEffective = 0
+    for(price in priceVector) {
+      if (price>(i-1)*VInterval+minPrice && price < i*VInterval+minPrice) {
+        observedEffective = 1 + observedEffective 
+      }
+    }
+    observedEffectives[i] = observedEffective
+  }
+  
+  
+  #Khi deux probabilité théorique pour chacun des intervalles
+  pexp(1, rate=lambdaEstimator)
+  theoreticalEffectives = vector()
+  for(i in 1:(k-1)) {
+    theoreticalEffectives[i] = (pexp(VInterval*(i),rate = lambdaEstimator) - pexp(VInterval*(i-1),rate = lambdaEstimator))
+  }
+  theoreticalEffectives[k] = 1 - pexp(VInterval*(k-1), rate=lambdaEstimator)
+  
+  chisq.test(observedEffectives, p=theoreticalEffectives)
 }
-khi_deux
+
+exponentialKhiDeux(15, lambdaEstimator)
+exponentialKhiDeux(15, lambdaEstimator+lambdaErrorUp)
+exponentialKhiDeux(15, lambdaEstimator-lambdaErrorDown)
+exponentialKhiDeux(25, lambdaEstimator)
+exponentialKhiDeux(25, lambdaEstimator+lambdaErrorUp)
+exponentialKhiDeux(25, lambdaEstimator-lambdaErrorDown)
 
 
-hist(dataFilteredByPrice$ResaleMid)
-plot(dataFilteredByPrice$ConvertedManaCost, dataFilteredByPrice$ResaleMid)
+
+
+
