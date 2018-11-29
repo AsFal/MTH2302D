@@ -1,0 +1,260 @@
+Observation	Name	InGameCost	ConvertedManaCost	Rarity	RarityConversion	ResaleHigh	ResaleMid	ResaleLow
+1	 Academy Drake	2U	3	C	1	0.95	0.13	0.01
+2	 Academy Journeymage	4U	5	C	1	1.99	0.14	0.01
+3	 Adamant Will	1W	2	C	1	8.00	0.13	0.01
+4	 Adeliz, the Cinder Wind	1UR	3	U	2	3.77	0.41	0.15
+5	 Adventurous Impulse	G	1	C	1	1.90	0.19	0.03
+6	 Aesthir Glider	3	3	C	1	0.95	0.12	0.01
+7	 Amaranthine Wall	4	4	U	2	1.90	0.21	0.02
+8	 Ancient Animus	1G	2	C	1	0.95	0.14	0.01
+9	 Arbor Armament	G	1	C	1	0.95	0.13	0.01
+10	 Arcane Flight	U	1	C	1	0.95	0.14	0.01
+11	 Artificer's Assistant	U	1	C	1	1.20	0.15	0.01
+12	 Arvad the Cursed	3WB	5	U	2	2.77	0.25	0.04
+13	 Aryel, Knight of Windgrace	2WB	4	R	3	7.00	0.46	0.15
+14	 Aven Sentry	3W	4	C	1	0.95	0.12	0.01
+15	 Baird, Steward of Argive	2WW	4	U	2	4.77	0.25	0.05
+16	 Baloth Gorger	2GG	4	C	1	1.20	0.14	0.01
+17	 Befuddle	2U	3	C	1	1.20	0.13	0.01
+18	 Benalish Honor Guard	1W	2	C	1	0.95	0.13	0.01
+19	 Benalish Marshal	WWW	3	R	3	7.00	1.50	0.50
+20	 Blackblade Reforged	2	2	R	3	4.77	0.99	0.44
+21	 Blessed Light	4W	5	C	1	0.95	0.13	0.01
+22	 Blessing of Belzenlok	B	1	C	1	0.95	0.13	0.01
+23	 Blink of an Eye	1U	2	C	1	1.90	0.18	0.01
+24	 Bloodstone Goblin	1R	2	C	1	1.20	0.14	0.01
+25	 Bloodtallow Candle	1	1	C	1	0.95	0.12	0.01
+26	 Board the Weatherlight	1W	3	U	2	1.99	0.20	0.02
+27	 Broken Bond	1G	5	C	1	1.90	0.17	0.03
+28	 Cabal Evangel	1B	2	C	1	0.95	0.12	0.01
+29	 Cabal Paladin	3B	3	C	1	0.95	0.14	0.01
+30	 Cabal Stronghold		0	R	3	6.99	1.00	0.49
+31	 Caligo Skin-Witch	1B	3	C	1	0.95	0.13	0.01
+32	 Call the Cavalry	3W	4	C	1	0.95	0.14	0.01
+33	 Cast Down	1B	2	U	2	4.99	1.00	0.45
+34	 Chainer's Torment	3B	4	U	2	1.94	0.23	0.03
+35	 Champion of the Flame	1R	4	U	2	2.00	0.24	0.04
+36	 Chandra's Outburst	3RR	5	R	3	2.00	0.41	0.10
+37	 Chandra, Bold Pyromancer	4RR	5	M	4	13.99	4.35	1.55
+38	 Charge	W	1	C	1	2.28	0.14	0.01
+39	 Clifftop Retreat		0	R	3	10.00	2.91	1.55
+40	 Cloudreader Sphinx	4U	5	C	1	0.95	0.13	0.01
+41	 Cold-Water Snapper	5U	6	C	1	0.95	0.14	0.01
+42	 Corrosive Ooze	1G	2	C	1	1.20	0.15	0.01
+43	 Curator's Ward	2U	3	U	2	1.94	0.21	0.03
+44	 D'Avenant Trapper	2W	3	C	1	0.95	0.13	0.01
+45	 Damping Sphere	2	2	U	2	7.77	1.50	0.75
+46	 Danitha Capashen, Paragon	2W	3	U	2	3.77	0.37	0.07
+47	 Darigaaz Reincarnated	4BRG	7	M	4	9.17	1.14	0.40
+48	 Daring Archaeologist	3W	4	R	3	3.00	0.29	0.05
+49	 Dark Bargain	3B	4	C	1	1.90	0.15	0.01
+50	 Dauntless Bodyguard	W	1	U	2	3.99	0.37	0.09
+51	 Deathbloom Thallid	2B	3	C	1	0.95	0.14	0.01
+52	 Deep Freeze	2U	3	C	1	1.20	0.14	0.01
+53	 Demonic Vigor	B	1	C	1	1.20	0.14	0.01
+54	 Demonlord Belzenlok	4BB	3	M	4	11.00	1.39	0.45
+55	 Diligent Excavator	1U	2	U	2	1.90	0.20	0.02
+56	 Divest	B	1	C	1	1.77	0.15	0.01
+57	 Divination	2U	7	C	1	0.95	0.14	0.01
+58	 Dread Shade	BBB	3	R	3	42.00	0.54	0.20
+59	 Drudge Sentinel	2B	4	C	1	0.99	0.14	0.01
+60	 Dub	2W	3	C	1	0.60	0.14	0.01
+61	 Elfhame Druid	1G	2	U	2	1.90	0.22	0.02
+62	 Eviscerate	3B	3	C	1	0.95	0.14	0.01
+63	 Evra, Halcyon Witness	4WW	6	R	3	7.17	0.33	0.09
+64	 Excavation Elephant	4W	6	C	1	0.95	0.13	0.01
+65	 Fall of the Thran	5W	2	R	3	8.00	0.48	0.10
+66	 Feral Abomination	5B	6	C	1	0.95	0.13	0.01
+67	 Fervent Strike	R	1	C	1	0.95	0.12	0.01
+68	 Fiery Intervention	4R	5	C	1	0.95	0.11	0.01
+69	 Fight with Fire	2R	3	U	2	1.90	0.33	0.05
+70	 Final Parting	3BB	5	U	2	1.90	0.25	0.05
+71	 Fire Elemental	3RR	5	C	1	0.95	0.13	0.01
+72	 Firefist Adept	4R	5	U	2	1.94	0.20	0.01
+73	 Forebear's Blade	3	3	R	3	8.77	0.70	0.10
+74	 Frenzied Rage	1R	2	C	1	0.95	0.15	0.01
+75	 Fungal Infection	B	1	C	1	1.20	0.15	0.01
+76	 Fungal Plots	1G	5	U	2	1.90	0.24	0.02
+77	 Gaea's Blessing	1G	5	U	2	1.90	0.20	0.02
+78	 Gaea's Protector	3G	3	C	1	2.34	0.14	0.01
+79	 Garna, the Bloodflame	3BR	2	U	2	3.77	0.23	0.02
+80	 Ghitu Chronicler	1R	2	C	1	0.95	0.14	0.01
+81	 Ghitu Journeymage	2R	2	C	1	0.99	0.13	0.01
+82	 Ghitu Lavarunner	R	1	C	1	1.18	0.21	0.01
+83	 Gideon's Reproach	1W	4	C	1	0.95	0.14	0.01
+84	 Gift of Growth	1G	5	C	1	0.98	0.14	0.01
+85	 Gilded Lotus	5	2	R	3	9.99	3.00	1.50
+86	 Goblin Barrage	3R	3	U	2	1.90	0.22	0.02
+87	 Goblin Chainwhirler	RRR	3	R	3	8.00	4.49	2.98
+88	 Goblin Warchief	1RR	4	U	2	2.27	0.41	0.10
+89	 Grand Warlord Radha	2RG	5	R	3	7.19	0.50	0.15
+90	 Grow from the Ashes	2G	2	C	1	0.95	0.16	0.02
+91	 Grunn, the Lonely King	4GG	3	U	2	50.00	0.20	0.02
+92	 Guardians of Koilos	5	5	C	1	0.95	0.13	0.01
+93	 Hallar, the Firefletcher	1RG	2	U	2	2.27	0.21	0.02
+94	 Haphazard Bombardment	5R	2	R	3	9.65	0.25	0.04
+95	 Healing Grace	W	1	C	1	1.20	0.15	0.01
+96	 Helm of the Host	4	4	R	3	9.00	2.61	0.93
+97	 Hinterland Harbor		0	R	3	11.27	2.94	1.68
+98	 History of Benalia	1WW	3	M	4	33.53	25.50	22.95
+99	 Homarid Explorer	3U	4	C	1	1.27	0.13	0.01
+100	 Howling Golem	3	3	U	2	1.90	0.20	0.01
+101	 Icy Manipulator	4	6	U	2	1.20	0.22	0.03
+102	 In Bolas's Clutches	4UU	5	U	2	2.99	0.24	0.02
+103	 Invoke the Divine	2W	3	C	1	1.20	0.15	0.01
+104	 Isolated Chapel		0	R	3	9.99	3.33	1.84
+105	 Jaya Ballard	2RRR	5	M	4	16.00	4.23	2.60
+106	 Jaya's Immolating Inferno	XRR	3	R	3	4.00	0.47	0.09
+107	 Jhoira's Familiar	4	4	U	2	2.00	0.25	0.03
+108	 Jhoira, Weatherlight Captain	2UR	3	M	4	15.00	2.27	0.80
+109	 Jodah, Archmage Eternal	1URW	4	R	3	5.37	0.46	0.10
+110	 Josu Vess, Lich Knight	2BB	3	R	3	6.27	0.64	0.20
+111	 Jousting Lance	2	4	C	1	0.95	0.14	0.01
+112	 Juggernaut	4	6	U	2	1.20	0.17	0.01
+113	 Kamahl's Druidic Vow	XGG	3	R	3	7.00	0.38	0.05
+114	 Karn's Temporal Sundering	4UU	6	R	3	7.19	0.57	0.24
+115	 Karn, Scion of Urza	4	5	M	4	110.00	30.56	25.10
+116	 Karplusan Hound	3R	4	U	2	0.50	0.12	0.05
+117	 Kazarov, Sengir Pureblood	5BB	4	R	3	3.37	0.29	0.06
+118	 Keldon Overseer	2R	4	C	1	1.20	0.14	0.01
+119	 Keldon Raider	2RR	4	C	1	0.95	0.12	0.01
+120	 Keldon Warcaller	1R	4	C	1	1.20	0.13	0.01
+121	 Knight of Grace	1W	2	U	2	2.99	0.50	0.10
+122	 Knight of Malice	1B	4	U	2	2.27	0.37	0.10
+123	 Knight of New Benalia	1W	2	C	1	0.95	0.13	0.01
+124	 Krosan Druid	2G	6	C	1	0.95	0.13	0.01
+125	 Kwende, Pride of Femeref	3W	4	U	2	2.27	0.25	0.04
+126	 Lich's Mastery	3BBB	4	R	3	4.00	0.49	0.10
+127	 Lingering Phantom	5B	7	U	2	1.90	0.19	0.01
+128	 Llanowar Elves	G	1	C	1	2.00	0.25	0.01
+129	 Llanowar Envoy	2G	3	C	1	1.00	0.13	0.01
+130	 Llanowar Scout	1G	4	C	1	1.20	0.15	0.01
+131	 Lyra Dawnbringer	3WW	6	M	4	32.99	14.13	9.00
+132	 Mammoth Spider	4G	6	C	1	0.95	0.13	0.01
+133	 Marwyn, the Nurturer	2G	3	R	3	5.27	0.65	0.25
+134	 Meandering River		0	C	1	0.77	0.15	0.04
+135	 Memorial to Folly		0	U	2	2.37	0.25	0.04
+136	 Memorial to Genius		0	U	2	10.00	0.24	0.04
+137	 Memorial to Glory		0	U	2	2.37	0.21	0.02
+138	 Memorial to Unity		0	U	2	2.37	0.25	0.04
+139	 Memorial to War		0	U	2	1.90	0.21	0.01
+140	 Merfolk Trickster	UU	2	U	2	2.99	0.79	0.40
+141	 Mesa Unicorn	1W	2	C	1	0.95	0.14	0.01
+142	 Mishra's Self-Replicator	5	5	R	3	7.00	0.33	0.08
+143	 Mox Amber	0	0	M	4	52.66	11.15	8.31
+144	 Muldrotha, the Gravetide	3BGU	6	M	4	10.99	4.25	2.00
+145	 Multani, Yavimaya's Avatar	4GG	6	M	4	7.77	2.15	1.25
+146	 Naban, Dean of Iteration	1U	2	R	3	6.00	0.56	0.20
+147	 Naru Meha, Master Wizard	2UU	5	M	4	5.14	1.33	0.50
+148	 Nature's Spiral	1G	0	U	2	1.90	0.18	0.01
+149	 Navigator's Compass	1	6	C	1	1.20	0.15	0.01
+150	 Niambi, Faithful Healer	1WU	6	R	3	5.94	0.40	0.08
+151	 Oath of Teferi	3WU	2	R	3	7.00	0.56	0.14
+152	 On Serra's Wings	3W	4	U	2	1.90	0.24	0.03
+153	 Opt	U	1	C	1	2.77	0.25	0.05
+154	 Orcish Vandal	1R	2	U	2	1.90	0.19	0.01
+155	 Pardic Wanderer	6	6	C	1	0.95	0.14	0.01
+156	 Pegasus Courser	2W	3	C	1	1.30	0.13	0.01
+157	 Phyrexian Scriptures	2BB	4	M	4	8.64	1.72	0.75
+158	 Pierce the Sky	1G	2	C	1	0.95	0.13	0.01
+159	 Powerstone Shard	3	3	C	1	1.00	0.15	0.02
+160	 Precognition Field	3U	4	R	3	7.00	0.45	0.05
+161	 Primevals' Glorious Rebirth	5WB	7	R	3	4.47	0.40	0.08
+162	 Primordial Wurm	4GG	6	C	1	0.95	0.13	0.01
+163	 Pyromantic Pilgrim	2R	3	C	1	0.99	0.13	0.03
+164	 Radiating Lightning	3R	4	C	1	1.20	0.14	0.01
+165	 Raff Capashen, Ship's Mage	2WU	4	U	2	2.27	0.25	0.05
+166	 Rampaging Cyclops	3R	4	C	1	0.99	0.13	0.01
+167	 Rat Colony	1B	2	C	1	2.87	0.85	0.20
+168	 Relic Runner	1U	2	C	1	0.95	0.13	0.01
+169	 Rescue	U	1	C	1	0.95	0.13	0.01
+170	 Rite of Belzenlok	3B	4	R	3	8.00	0.42	0.08
+171	 Rona, Disciple of Gix	1UB	3	U	2	2.27	0.24	0.01
+172	 Run Amok	1R	2	C	1	0.95	0.14	0.01
+173	 Sage of Lat-Nam	1U	2	U	2	2.77	0.19	0.01
+174	 Sanctum Spirit	3W	4	U	2	1.90	0.20	0.01
+175	 Saproling Migration	1G	2	C	1	0.95	0.15	0.01
+176	 Seal Away	1W	2	U	2	4.77	1.00	0.38
+177	 Seismic Shift	3R	4	C	1	0.95	0.11	0.01
+178	 Sentinel of the Pearl Trident	4U	5	U	2	2.27	0.20	0.01
+179	 Sergeant-at-Arms	2W	3	C	1	0.95	0.14	0.01
+180	 Serra Angel	3WW	5	U	2	1.90	0.20	0.01
+181	 Serra Disciple	1W	2	C	1	0.94	0.13	0.01
+182	 Settle the Score	2BB	4	U	2	1.90	0.25	0.03
+183	 Shalai, Voice of Plenty	3W	4	R	3	14.00	3.03	1.40
+184	 Shanna, Sisay's Legacy	WG	2	U	2	5.28	0.25	0.05
+185	 Shield of the Realm	2	2	U	2	1.90	0.20	0.02
+186	 Shivan Fire	R	1	C	1	0.95	0.14	0.01
+187	 Short Sword	1	4	C	1	0.95	0.13	0.01
+188	 Siege-Gang Commander	3RR	5	R	3	4.77	0.73	0.20
+189	 Skirk Prospector	R	1	C	1	0.95	0.18	0.02
+190	 Skittering Surveyor	3	5	C	1	0.99	0.15	0.01
+191	 Skizzik	3R	2	U	2	1.90	0.20	0.02
+192	 Slimefoot, the Stowaway	1BG	4	U	2	3.14	0.30	0.10
+193	 Slinn Voda, the Rising Deep	6UU	4	U	2	4.47	0.21	0.01
+194	 Song of Freyalise	1G	2	U	2	8.00	0.72	0.20
+195	 Sorcerer's Wand	1	2	U	2	1.90	0.23	0.01
+196	 Soul Salvage	2B	3	C	1	0.95	0.13	0.01
+197	 Sparring Construct	1	1	C	1	1.20	0.14	0.01
+198	 Spore Swarm	3G	5	U	2	1.90	0.25	0.05
+199	 Sporecrown Thallid	1G	2	U	2	2.47	0.35	0.15
+200	 Squee, the Immortal	1RR	3	R	3	3.19	0.61	0.25
+201	 Steel Leaf Champion	GGG	3	R	3	9.99	3.92	2.75
+202	 Stronghold Confessor	B	1	C	1	1.25	0.14	0.01
+203	 Sulfur Falls		0	R	3	8.37	5.00	0.50
+204	 Sylvan Awakening	2G	4	R	3	4.77	0.50	0.10
+205	 Syncopate	XU	2	C	1	0.95	0.16	0.02
+206	 Tatyova, Benthic Druid	3GU	2	U	2	9.99	0.30	0.07
+207	 Teferi's Sentinel	5	4	U	2	0.50	0.20	0.05
+208	 Teferi, Hero of Dominaria	3WU	5	M	4	75.00	47.99	41.00
+209	 Teferi, Timebender	4WU	3	M	4	13.99	4.32	2.11
+210	 Tempest Djinn	UUU	3	R	3	4.77	0.57	0.20
+211	 Temporal Machinations	2U	2	C	1	0.50	0.14	0.04
+212	 Territorial Allosaurus	2GG	4	R	3	4.99	0.48	0.10
+213	 Teshar, Ancestor's Apostle	3W	4	R	3	13.33	0.66	0.15
+214	 Tetsuko Umezawa, Fugitive	1U	2	U	2	20.99	0.34	0.07
+215	 Thallid Omnivore	3B	2	C	1	0.95	0.14	0.01
+216	 Thallid Soothsayer	3B	4	U	2	1.90	0.20	0.02
+217	 The Antiquities War	3U	1	R	3	8.00	0.68	0.20
+218	 The Eldest Reborn	4B	5	U	2	3.37	0.37	0.08
+219	 The First Eruption	2R	3	R	3	4.00	0.30	0.05
+220	 The Flame of Keld	1R	3	U	2	2.98	0.39	0.10
+221	 The Mending of Dominaria	3GG	4	R	3	5.77	0.50	0.10
+222	 The Mirari Conjecture	4U	3	R	3	6.00	0.49	0.10
+223	 Thorn Elemental	5GG	8	U	2	1.90	0.19	0.02
+224	 Thran Temporal Gateway	4	2	R	3	6.27	0.60	0.20
+225	 Tiana, Ship's Caretaker	3WR	1	U	2	3.00	0.23	0.01
+226	 Timber Gorge		0	C	1	0.94	0.12	0.04
+227	 Time of Ice	3U	1	U	2	3.00	0.24	0.04
+228	 Tolarian Scholar	2U	4	C	1	0.95	0.13	0.01
+229	 Torgaar, Famine Incarnate	6BB	2	R	3	9.00	0.48	0.15
+230	 Tragic Poet	W	1	C	1	0.95	0.12	0.01
+231	 Traxos, Scourge of Kroog	4	4	R	3	7.96	0.65	0.15
+232	 Triumph of Gerrard	1W	2	U	2	4.99	0.21	0.02
+233	 Two-Headed Giant	2RR	4	R	3	4.86	0.29	0.05
+234	 Untamed Kavu	1G	3	U	2	1.90	0.24	0.01
+235	 Unwind	2U	3	C	1	0.99	0.15	0.02
+236	 Urgoros, the Empty One	4BB	5	U	2	2.27	0.20	0.01
+237	 Urza's Ruinous Blast	4W	5	R	3	5.50	0.50	0.15
+238	 Urza's Tome	2	5	U	2	2.27	0.19	0.01
+239	 Valduk, Keeper of the Flame	1R	6	U	2	1.98	0.24	0.03
+240	 Verdant Force	5GGG	8	R	3	3.77	0.30	0.05
+241	 Verix Bladewing	2RR	3	M	4	4.99	2.82	1.10
+242	 Vicious Offering	1B	4	C	1	0.95	0.15	0.01
+243	 Vodalian Arcanist	1U	4	C	1	0.95	0.14	0.01
+244	 Voltaic Servant	2	2	C	1	1.99	0.15	0.01
+245	 Warcry Phoenix	3R	4	U	2	1.90	0.20	0.01
+246	 Warlord's Fury	R	1	C	1	1.20	0.15	0.01
+247	 Weatherlight	4	4	M	4	7.77	1.18	0.25
+248	 Weight of Memory	3UU	5	U	2	1.90	0.22	0.01
+249	 Whisper, Blood Liturgist	3B	3	U	2	2.77	0.25	0.04
+250	 Wild Onslaught	3G	2	U	2	1.20	0.20	0.01
+251	 Windgrace Acolyte	4B	5	C	1	0.95	0.12	0.01
+252	 Wizard's Lightning	2R	5	U	2	3.99	2.07	0.75
+253	 Wizard's Retort	1UU	7	U	2	3.77	0.50	0.25
+254	 Woodland Cemetery		0	R	3	7.77	4.50	3.50
+255	 Yargle, Glutton of Urborg	4B	5	U	2	1.90	0.21	0.02
+256	 Yavimaya Sapherd	2G	3	C	1	0.60	0.14	0.01
+257	 Yawgmoth's Vile Offering	4B	4	R	3	5.37	0.50	0.18
+258	 Zahid, Djinn of the Lamp	4UU	3	R	3	9.95	0.40	0.08
+259	 Zhalfirin Void		0	U	2	2.99	0.39	0.15
