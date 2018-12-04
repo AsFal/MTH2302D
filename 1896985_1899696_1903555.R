@@ -65,13 +65,13 @@ exponentialKhiDeux = function(k, lambdaEstimator) {
   ### khi-deux effectifs observées
   observedEffectives = vector()
   maxPrice = 0
-  for(price in Data$ConversionDeLaRarete) {
+  for(price in dataFilteredByPrice$ResaleMid) {
     if(price > maxPrice) {
       maxPrice = price
     }
   }
   minPrice = Inf
-  for(price in Data$ConversionDeLaRarete) {
+  for(price in dataFilteredByPrice$ResaleMid) {
     if(price < minPrice) {
       minPrice = price
     }
@@ -80,7 +80,7 @@ exponentialKhiDeux = function(k, lambdaEstimator) {
   priceInterval = maxPrice-minPrice
   VInterval = priceInterval/k
   
-  priceVector <- Data$ConversionDeLaRarete
+  priceVector <- dataFilteredByPrice$ResaleMid
   
   
   observedEffective = vector()
@@ -118,17 +118,16 @@ exponentialKhiDeux(25, lambdaEstimator)
 exponentialKhiDeux(25, lambdaEstimator+lambdaErrorUp)
 exponentialKhiDeux(25, lambdaEstimator-lambdaErrorDown)
 
+linearMod = lm( ResaleMid ~ ConvertedManaCost, data=dataFilteredByPrice)
+print(linearMod)
+summary(linearMod)$r.squared
+
 jpeg("plot-line.jpeg",width = 600, height = 350)
 plot(dataFilteredByPrice$ConvertedManaCost, dataFilteredByPrice$ResaleMid,
      main="Figure 5: Évaluation graphique de la relation entre le prix en jeu et à l'extérieur du jeu",
      xlab = "Prix en jeu", ylab = "Prix à l'extérieur du jeu")
 abline(0.254836, -0.001725, col = 'red')
 dev.off()
-
-linearMod = lm( ResaleMid ~ ConvertedManaCost, data=dataFilteredByPrice)
-print(linearMod)
-summary(linearMod)$r.squared
-
 
 ## -------------------------------------
 ## ------ Analyse de la Rareté ---------
@@ -139,26 +138,29 @@ hist(data$RarityConversion, xlab="Niveau de rareté", ylab="Fréquence", main="F
 
 # Différence entre le prix élevé et le prix médian
 diff = data$ResaleHigh - data$ResaleMid
-diffFiltered = dataFiltered$ResaleHigh - dataFiltered$ResaleMid
+diffFiltered = dataFilteredByPrice$ResaleHigh - dataFilteredByPrice$ResaleMid
 
 ## Régression linéaire (non filtrée)
 rarete.lm = lm(diff~data$RarityConversion, data=data)
 summary(rarete.lm)
+print(rarete.lm)
+
 
 ## Analyse des résidus (non filtrée)
 rarete.res = resid(rarete.lm)
 plot(data$RarityConversion, rarete.res, ylab="Résidus", xlab="Rareté", main="Figure 7: Analyse des Résidus")
-abline(0,0)
+abline(-3.320 ,3.703)
 
 
 ## Régression linéaire (filtrée)
-raretef.lm = lm(diffFiltered~dataFiltered$RarityConversion, data=dataFiltered)
+raretef.lm = lm(diffFiltered~dataFilteredByPrice$RarityConversion, data=dataFilteredByPrice)
 summary(raretef.lm)
+# print(raretef.lm)
 
 ## Analyse des résidus (filtrée)
 raretef.res = resid(raretef.lm)
-plot(dataFiltered$RarityConversion, raretef.res, ylab="Résidus", xlab="Rareté", main="Analyse des Résidus")
-abline(0,0)
+plot(dataFilteredByPrice$RarityConversion, raretef.res, ylab="Résidus", xlab="Rareté", main="Analyse des Résidus")
+abline(-1.730,2.652)
 
 
 
