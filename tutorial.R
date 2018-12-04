@@ -1,6 +1,7 @@
 require(xlsx)
-data = read.xlsx("1896985_1899696_1903555.xlsx", sheetName = "Sheet1")
+data = read.xlsx(file.choose(), sheetName = "Sheet1")
 data
+#1896985_1899696_1903555.xlsx
 
 midPrice = data$ResaleMid
 
@@ -126,7 +127,7 @@ dev.off()
 
 linearMod = lm( ResaleMid ~ ConvertedManaCost, data=dataFilteredByPrice)
 print(linearMod)
-summary(linearMod)
+summary(linearMod)$r.squared
 
 
 
