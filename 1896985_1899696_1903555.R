@@ -159,6 +159,8 @@ summary(raretef.lm)
 
 ## Analyse des résidus (filtrée)
 raretef.res = resid(raretef.lm)
+
+
 plot(dataFilteredByPrice$RarityConversion, raretef.res, ylab="Résidus", xlab="Rareté", main="Analyse des Résidus")
 abline(-1.730,2.652)
 
