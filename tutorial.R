@@ -63,13 +63,13 @@ exponentialKhiDeux = function(k, lambdaEstimator) {
   ### khi-deux effectifs observées
   observedEffectives = vector()
   maxPrice = 0
-  for(price in dataFilteredByPrice$ResaleMid) {
+  for(price in Data$ConversionDeLaRarete) {
     if(price > maxPrice) {
       maxPrice = price
     }
   }
   minPrice = Inf
-  for(price in dataFilteredByPrice$ResaleMid) {
+  for(price in Data$ConversionDeLaRarete) {
     if(price < minPrice) {
       minPrice = price
     }
@@ -78,7 +78,7 @@ exponentialKhiDeux = function(k, lambdaEstimator) {
   priceInterval = maxPrice-minPrice
   VInterval = priceInterval/k
   
-  priceVector <- dataFilteredByPrice$ResaleMid
+  priceVector <- Data$ConversionDeLaRarete
   
   
   observedEffective = vector()
