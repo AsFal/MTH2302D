@@ -129,5 +129,38 @@ print(linearMod)
 summary(linearMod)
 
 
+## -------------------------------------
+## ------ Analyse de la Rareté ---------
+## -------------------------------------
+
+# Histogramme de la fréquence pour la rareté des cartes
+hist(data$RarityConversion, xlab="Niveau de rareté", ylab="Fréquence", main="Figure 6: Rareté des cartes", labels=TRUE)
+
+# Différence entre le prix élevé et le prix médian
+diff = data$ResaleHigh - data$ResaleMid
+diffFiltered = dataFiltered$ResaleHigh - dataFiltered$ResaleMid
+
+## Régression linéaire (non filtrée)
+rarete.lm = lm(diff~data$RarityConversion, data=data)
+summary(rarete.lm)
+
+## Analyse des résidus (non filtrée)
+rarete.res = resid(rarete.lm)
+plot(data$RarityConversion, rarete.res, ylab="Résidus", xlab="Rareté", main="Figure 7: Analyse des Résidus")
+abline(0,0)
+
+
+## Régression linéaire (filtrée)
+raretef.lm = lm(diffFiltered~dataFiltered$RarityConversion, data=dataFiltered)
+summary(raretef.lm)
+
+## Analyse des résidus (filtrée)
+raretef.res = resid(raretef.lm)
+plot(dataFiltered$RarityConversion, raretef.res, ylab="Résidus", xlab="Rareté", main="Analyse des Résidus")
+abline(0,0)
+
+
+
+
 
 
